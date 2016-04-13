@@ -50,9 +50,9 @@ export function gradientWithTValues(colors, t, values) {
     offset = normalizedValue-t[bucket];
 
     colorsOut.push({color: [
-      colors[bucket][0] + Math.floor(redStep*offset),
-      colors[bucket][1] + Math.floor(greenStep*offset),
-      colors[bucket][2] + Math.floor(blueStep*offset),
+      colors[bucket][0] + redStep*offset,
+      colors[bucket][1] + greenStep*offset,
+      colors[bucket][2] + blueStep*offset,
       ]});
   }
 
